@@ -1,3 +1,4 @@
+/* Cabeçalho - Inicio */
 header {
     display: flex;
     background: black;
@@ -20,23 +21,123 @@ header .logo {
     width: 100px;
     margin-left: 2%;
 }
+/* Cabeçalho - Fim */
 
+
+
+/* Linha Titulos - Inicio */
 section .titulo {
     margin: 0% 3% 1% 3%;
     border-bottom: 3px solid black;
     padding: 10px;
 }
+/* Linha Titulos - Fim */
 
+
+
+/* Carrossel - Inicio */
 section #carouselExampleCaptions {
-    width: 1000px; 
+    width: 1066px;
     margin: 0 auto;
 }
 
-section #carouselExampleCaptions .carousel-inner img {
-    height: 400px;
-    object-fit: cover; 
+section .carousel-inner h5 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+section .carousel-inner p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+section #carouselExampleCaptions .carousel-inner img {
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: brightness(70%);
+}
+/* Carrossel - Fim */
+
+
+
+/* Card - Inicio */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .card {
+    margin: 20px;
+    border: 1px solid black;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+/* Card - Fim */
+
+
+
+/* InfoAluno - Inicio */
+section .infoAluno {
+    display: flex;
+    justify-content: center;
+    margin: 0% 4% 0% 4%;
+}
+
+section .infoAluno h5 {
+    color: #0095ff;
+    font-weight: bold;
+}
+
+section .infoAluno li {
+    list-style: none;
+}
+
+section .autor img {
+    width: 70px;
+    height: 70px;
+}
+
+section .autor-conteudo {
+    display: flex;
+    align-items: center;
+}
+
+section .redes {
+    display: flex;
+    align-items: center;
+}
+
+section .redes ul {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+}
+
+section .redes img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+section .sobre {
+    flex: 1;
+    margin-right: 200px;
+}
+
+section .sobre p {
+    font-size: 1.2rem;
+}
+
+section .detalhes {
+    display: flex;
+    flex-direction: column;
+}   
+/* InfoAluno - Fim */
+
+
+
+/* Rodapé - Inicio */
 footer {
     text-align: center;
     font-weight: bold;
@@ -45,3 +146,4 @@ footer {
     color: white;
     padding: 10px;
 }
+/* Rodapé - Fim */
