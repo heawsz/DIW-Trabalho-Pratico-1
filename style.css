@@ -16,10 +16,10 @@ header a {
     margin-right: 3%;
 }
 
-header .logo {
+header a img {
     height: 100px;
     width: 100px;
-    margin-left: 2%;
+    margin-left: 30px;
 }
 /* Cabeçalho - Fim */
 
@@ -62,11 +62,15 @@ section #carouselExampleCaptions .carousel-inner img {
 
 
 /* Card - Inicio */
-.container {
+section .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+section .card-text {
+    font-size: 0.9rem;
+} 
 
 section .card {
     margin: 20px;

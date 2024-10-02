@@ -1,0 +1,51 @@
+/* Cabeçalho - Inicio */
+header {
+    display: flex;
+    background: black;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+header a {
+    padding: 5px;
+    margin-right: 3%;
+}
+
+header .search {
+    font-size: 1.4rem;
+    margin-right: 3%;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+}
+
+header .search-input {
+    background: none;
+    border: none;
+    width: 400px;
+    padding: 3px 30px;
+    text-align: right;
+}
+
+header .search-input:focus {
+    outline: none; 
+}
+
+header .search-button {
+    background: none;
+    border: none;
+    padding-right: 15px
+}
+
+header button img {
+    width: 25px;
+    height: auto;
+}
+
+header a img {
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+}
+/* Cabeçalho - Fim */
