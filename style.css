@@ -7,6 +7,10 @@ header {
     margin-bottom: 20px;
 }
 
+header nav {
+    margin-right: 3%;
+}
+
 header a {
     text-decoration: none;
     color: white;
