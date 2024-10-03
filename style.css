@@ -39,7 +39,7 @@ section .titulo {
 section #carouselExampleCaptions {
     width: 100%;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 section .carousel-inner h5 {
@@ -80,6 +80,7 @@ section .card-text {
 } 
 
 section .card {
+    width: 100%;
     margin: 20px;
     border: 1px solid black;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
@@ -163,6 +164,49 @@ footer {
 
 /* Responsividade - Inicio */
 
+@media (max-width: 767px) {
+    header {
+        flex-direction: row; 
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
+    section #carouselExampleCaptions .carousel-inner img {
+        height: 300px;
+    }
 
+    section .container {
+        padding: 0% 10% 0% 0%;
+    }
+    
+    section .infoAluno {
+        flex-direction: column;
+    }
+
+    section .sobre {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    section .detalhes {
+        align-items: center;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    section .container {
+        padding: 0% 5% 0% 0%;
+    }
+
+    section .infoAluno {
+        flex-direction: column;
+    }
+}
 /* Responsividade - Fim */
