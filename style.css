@@ -37,7 +37,8 @@ section .titulo {
 
 /* Carrossel - Inicio */
 section #carouselExampleCaptions {
-    width: 1066px;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -49,6 +50,12 @@ section .carousel-inner h5 {
 section .carousel-inner p {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+section .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 section #carouselExampleCaptions .carousel-inner img {
@@ -151,3 +158,11 @@ footer {
     padding: 10px;
 }
 /* Rodapé - Fim */
+
+
+
+/* Responsividade - Inicio */
+
+
+
+/* Responsividade - Fim */
