@@ -25,51 +25,55 @@
     </header>
 
     <div class="container-flex">
+            <input type="checkbox" id="toggleFilters">
+            <label for="toggleFilters" class="mb-3">
+                <img src="imagens/filter.png" alt="Filtro" style="width: 25px; height: auto;">
+            </label>
         <aside class="filters p-3">
-                <h3>Filtros de Pesquisa</h3>
-                <form>
-                    <!-- Gênero -->
-                    <div class="mb-3">
-                        <label class="form-label">Gênero</label>
-                        <select class="form-select">
-                            <option value="">Selecione...</option>
-                            <option value="acao">Ação</option>
-                            <option value="drama">Drama</option>
-                            <option value="comedia">Comédia</option>
-                            <option value="terror">Terror</option>
-                            <option value="suspense">Suspense</option>
-                            <option value="fantasia">Fantasia</option>
-                        </select>
-                    </div>
+            <h3>Filtros de Pesquisa</h3>
+            <form>
+                <!-- Gênero -->
+                <div class="mb-3">
+                    <label class="form-label">Gênero</label>
+                    <select class="form-select">
+                        <option value="">Selecione...</option>
+                        <option value="acao">Ação</option>
+                        <option value="drama">Drama</option>
+                        <option value="comedia">Comédia</option>
+                        <option value="terror">Terror</option>
+                        <option value="suspense">Suspense</option>
+                        <option value="fantasia">Fantasia</option>
+                    </select>
+                </div>
 
-                    <!-- Ano de Lançamento -->
-                    <div class="mb-3">
-                        <label class="form-label">Ano de Lançamento</label>
-                        <select class="form-select">
-                            <option value="">Selecione...</option>
-                            <option value="2020-2024">2020-2024</option>
-                            <option value="2010-2019">2010-2019</option>
-                            <option value="2000-2009">2000-2009</option>
-                            <option value="1990-1999">1990-1999</option>
-                            <option value="before-1990">Antes de 1990</option>
-                        </select>
-                    </div>
+                <!-- Ano de Lançamento -->
+                <div class="mb-3">
+                    <label class="form-label">Ano de Lançamento</label>
+                    <select class="form-select">
+                        <option value="">Selecione...</option>
+                        <option value="2020-2024">2020-2024</option>
+                        <option value="2010-2019">2010-2019</option>
+                        <option value="2000-2009">2000-2009</option>
+                        <option value="1990-1999">1990-1999</option>
+                        <option value="before-1990">Antes de 1990</option>
+                    </select>
+                </div>
 
-                    <!-- Plataforma -->
-                    <div class="mb-3">
-                        <label class="form-label">Plataforma de Streaming</label>
-                        <select class="form-select">
-                            <option value="">Selecione...</option>
-                            <option value="netflix">Netflix</option>
-                            <option value="amazon-prime">Amazon Prime</option>
-                            <option value="disney">Disney+</option>
-                            <option value="hbo">HBO Max</option>
-                        </select>
-                    </div>
+                <!-- Plataforma -->
+                <div class="mb-3">
+                    <label class="form-label">Plataforma de Streaming</label>
+                    <select class="form-select">
+                        <option value="">Selecione...</option>
+                        <option value="netflix">Netflix</option>
+                        <option value="amazon-prime">Amazon Prime</option>
+                        <option value="disney">Disney+</option>
+                        <option value="hbo">HBO Max</option>
+                    </select>
+                </div>
 
-                    <!-- Botão de Aplicar Filtros -->
-                    <button type="submit" class="btn btn-primary">Aplicar Filtros</button>
-                </form>
+                <!-- Botão de Aplicar Filtros -->
+                <button type="submit" class="btn btn-primary">Aplicar Filtros</button>
+            </form>
         </aside>
 
         <main>
