@@ -18,9 +18,140 @@
         <a href="index.html"><img src="/imagens/logo.png" alt="logo" class="logo"></a>
         <nav class="search">
             <form class="search-form">
-                <input  placeholder="Pesquisa ..." class="search-input">
-                <button  class="search-button"><img src="imagens/search.png"></button>
+                <input placeholder="Pesquisa ..." class="search-input">
+                <button class="search-button"><img src="imagens/search.png"></button>
             </form>
         </nav>
     </header>
+
+    <div class="container-flex">
+        <aside class="filters p-3">
+                <h3>Filtros de Pesquisa</h3>
+                <form>
+                    <!-- Gênero -->
+                    <div class="mb-3">
+                        <label class="form-label">Gênero</label>
+                        <select class="form-select">
+                            <option value="">Selecione...</option>
+                            <option value="acao">Ação</option>
+                            <option value="drama">Drama</option>
+                            <option value="comedia">Comédia</option>
+                            <option value="terror">Terror</option>
+                            <option value="suspense">Suspense</option>
+                            <option value="fantasia">Fantasia</option>
+                        </select>
+                    </div>
+
+                    <!-- Ano de Lançamento -->
+                    <div class="mb-3">
+                        <label class="form-label">Ano de Lançamento</label>
+                        <select class="form-select">
+                            <option value="">Selecione...</option>
+                            <option value="2020-2024">2020-2024</option>
+                            <option value="2010-2019">2010-2019</option>
+                            <option value="2000-2009">2000-2009</option>
+                            <option value="1990-1999">1990-1999</option>
+                            <option value="before-1990">Antes de 1990</option>
+                        </select>
+                    </div>
+
+                    <!-- Plataforma -->
+                    <div class="mb-3">
+                        <label class="form-label">Plataforma de Streaming</label>
+                        <select class="form-select">
+                            <option value="">Selecione...</option>
+                            <option value="netflix">Netflix</option>
+                            <option value="amazon-prime">Amazon Prime</option>
+                            <option value="disney">Disney+</option>
+                            <option value="hbo">HBO Max</option>
+                        </select>
+                    </div>
+
+                    <!-- Botão de Aplicar Filtros -->
+                    <button type="submit" class="btn btn-primary">Aplicar Filtros</button>
+                </form>
+        </aside>
+
+        <main>
+            <section>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="imagens/TheLastOfUs.jpg" class="card-img-top" alt="TheLastOfUs">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Last of Us</h5>
+                                    <p class="card-text">Uma jornada emocional em um mundo devastado após um apocalipse
+                                        sombrio.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="imagens/Belair.jpg" class="card-img-top" alt="Belair">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bel-Air</h5>
+                                    <p class="card-text">Um drama que reimagina a clássica comédia de "Um Maluco no
+                                        Pedaço."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="imagens/Arcane.jpg" class="card-img-top" alt="Arcane">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arcane</h5>
+                                    <p class="card-text">Uma jornada fascinante pela rivalidade intensa entre Piltover e
+                                        a cidade de Zaun.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="imagens/Lupin.jpg" class="card-img-top" alt="Lupin">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lupin</h5>
+                                    <p class="card-text">Um ladrão astuto que honra o legado do famoso ladrão Arsène
+                                        Lupin.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="imagens/TheBigBangTheory.jpg" class="card-img-top" alt="TheBigBangTheory">
+                                <div class="card-body">
+                                    <h5 class="card-title">Big Bang: A Teoria</h5>
+                                    <p class="card-text">Uma comédia sobre físicos e suas interações sociais, repleta de
+                                        humor!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="imagens/Brooklyn99.jpg" class="card-img-top" alt="BrooklynNineNine">
+                                <div class="card-body">
+                                    <h5 class="card-title">Brooklyn 99</h5>
+                                    <p class="card-text">Uma equipe de detetives que resolvem crimes com um toque de
+                                        humor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        &copy; 2024 Erik Cristian de Alcântara Costa. Todos os direitos reservados.
+    </footer>
 </body>

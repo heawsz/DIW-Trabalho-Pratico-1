@@ -49,3 +49,109 @@ header a img {
     margin-left: 30px;
 }
 /* Cabeçalho - Fim */
+
+
+
+/* Barra Lateral - Inicio */
+
+aside {
+    width: 15%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 3%;
+    background: #e9ecef;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    margin-top: 20px;
+}
+
+/* Barra Lateral - Fim */
+
+
+
+/* Alinhamento - Inicio */
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+/* Alinhamento - Fim */
+
+
+
+/* Main - Inicio */
+main {
+    width: 85%;
+}
+/* Main - Fim */
+
+
+/* Card - Inicio */
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .card-text {
+    font-size: 1rem;
+} 
+
+section .card {
+    width: 100%;
+    margin: 20px;
+    border: 1px solid black;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+/* Card - Fim */
+
+
+
+/* Rodapé - Inicio */
+footer {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+/* Rodapé - Fim */
+
+
+
+@media (max-width: 767px) {
+
+    header {
+        flex-direction: row; 
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header .search {
+        font-size: 1.0rem;
+        margin: 1% 0% 3% 0%;
+    }
+
+    header .search-input {
+        width: 150px;
+    }
+    
+    section .container {
+        padding: 0% 10% 0% 0%;
+    }
+    
+    footer {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    section .container {
+        padding: 0% 5% 0% 0%;
+    }
+
+}
+/* Responsividade - Fim */
