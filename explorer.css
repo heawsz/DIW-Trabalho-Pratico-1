@@ -126,6 +126,7 @@ main {
 /* Main - Fim */
 
 
+
 /* Card - Inicio */
 section .container {
     display: flex;
@@ -142,6 +143,11 @@ section .card {
     margin: 20px;
     border: 1px solid black;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+section .card a {
+    text-decoration: none;
+    color: black;
 }
 /* Card - Fim */
 
