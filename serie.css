@@ -60,8 +60,9 @@ section #conteudo #imagem {
     border-radius: 3%;
 }
 
-section .geral-text{
+section .geral-text {
     margin-left: 1%;
+    margin-right: 10%;
 }
 
 section #conteudo .geral-title {
@@ -97,23 +98,24 @@ section #conteudo p img {
 }
 
 .checkmark img {
-    width: 30px; 
+    width: 30px;
     height: 30px;
     display: none;
 }
 
-.checkbox-container input:checked ~ .checkmark {
+.checkbox-container input:checked~.checkmark {
     background: white;
 }
 
-.checkbox-container input:checked ~ .checkmark .favoritar-text {
+.checkbox-container input:checked~.checkmark .favoritar-text {
     display: none;
 }
 
-.checkbox-container input:checked ~ .checkmark img {
+.checkbox-container input:checked~.checkmark img {
     display: block;
     margin-left: 5px;
 }
+
 /* Visão Geral - Fim */
 
 
@@ -123,16 +125,15 @@ section .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: auto;
 }
-
+  
 section .card-text {
     font-size: 0.9rem;
 } 
 
 section .card {
-    width: 80%;
-    margin: 20px 0px;
+    width: 100%;
+    margin: 20px;
     border: 1px solid black;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
 }
@@ -142,12 +143,45 @@ section .card {
 
 
 /* Temporada - Inicio */
-section .temp-ep {
+.temp-card {
     display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9), rgba(50, 50, 50, 0.9));
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+.temp-img {
+    flex: 0 0 150px;
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
 
-/* Temporada - Inicio */
+.temp-content {
+    flex: 1;
+}
+
+.temp-content h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.temp-content h5 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.temp-content p {
+    font-size: 1rem;
+}
+
+/* Temporada - Fim */
 
 
 
@@ -166,7 +200,6 @@ footer {
 
 
 /* Responsividade - Inicio */
-
 @media (max-width: 767px) {
     header {
         flex-direction: row;
@@ -178,6 +211,19 @@ footer {
 
     section .container {
         padding: 0% 10% 0% 0%;
+    }
+
+    section #conteudo {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    section .geral-text {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
     }
 
     footer {
