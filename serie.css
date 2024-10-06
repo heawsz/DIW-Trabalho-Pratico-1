@@ -25,6 +25,7 @@ header a img {
     width: 100px;
     margin-left: 30px;
 }
+
 /* Cabeçalho - Fim */
 
 
@@ -35,7 +36,118 @@ section .titulo {
     border-bottom: 3px solid black;
     padding: 10px;
 }
+
 /* Linha Titulos - Fim */
+
+
+
+/* Visão Geral - Inicio */
+section .visao-geral {
+    background-image: url(imagens/Imagens/TheLastOfUs3.jpeg);
+    background-size: cover;
+}
+
+section #conteudo {
+    display: flex;
+    color: white;
+    padding: 2%;
+    margin-left: 10%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+section #conteudo #imagem {
+    border: 2px solid whitesmoke;
+    border-radius: 3%;
+}
+
+section .geral-text{
+    margin-left: 1%;
+}
+
+section #conteudo .geral-title {
+    font-weight: bold;
+}
+
+section #conteudo p img {
+    width: 60px;
+    height: 60px;
+}
+
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+
+.checkbox-container input {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.checkmark {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.checkmark img {
+    width: 30px; 
+    height: 30px;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background: white;
+}
+
+.checkbox-container input:checked ~ .checkmark .favoritar-text {
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark img {
+    display: block;
+    margin-left: 5px;
+}
+/* Visão Geral - Fim */
+
+
+
+/* Card - Inicio */
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+section .card-text {
+    font-size: 0.9rem;
+} 
+
+section .card {
+    width: 80%;
+    margin: 20px 0px;
+    border: 1px solid black;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+/* Card - Fim */
+
+
+
+/* Temporada - Inicio */
+section .temp-ep {
+    display: flex;
+}
+
+
+/* Temporada - Inicio */
 
 
 
@@ -48,4 +160,35 @@ footer {
     color: white;
     padding: 10px;
 }
+
 /* Rodapé - Fim */
+
+
+
+/* Responsividade - Inicio */
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    section .container {
+        padding: 0% 10% 0% 0%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    section .container {
+        padding: 0% 5% 0% 0%;
+    }
+}
+
+/* Responsividade - Fim */
